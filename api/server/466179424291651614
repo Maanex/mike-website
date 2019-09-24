@@ -1,0 +1,120 @@
+{
+    "success": true,
+    "users": [
+        {
+            "id": "214858075650260992",
+            "tag": "Badosz#0001",
+            "username": "Badosz",
+            "discrim": "0001",
+            "avatar": "https://cdn.discordapp.com/avatars/214858075650260992/2773ad4be359fbf9e2e4fee4bfacfa18.png?size=2048",
+            "xp": 259,
+            "xpNeed": 500,
+            "level": 2
+        },
+        {
+            "id": "425360552148205588",
+            "tag": "kajetan_andrzejak#1674",
+            "username": "kajetan_andrzejak",
+            "discrim": "1674",
+            "avatar": "https://cdn.discordapp.com/avatars/425360552148205588/03e86ad3bb354fea60ddf5c429f2ee34.png?size=2048",
+            "xp": 15,
+            "xpNeed": 500,
+            "level": 2
+        },
+        {
+            "id": "239889458693013506",
+            "tag": "Hyron#6678",
+            "username": "Hyron",
+            "discrim": "6678",
+            "avatar": "https://cdn.discordapp.com/avatars/239889458693013506/0f8c0b5b74e311b020a4ca7a1efbd919.png?size=2048",
+            "xp": 44,
+            "xpNeed": 80,
+            "level": 1
+        },
+        {
+            "id": "364056796932997121",
+            "tag": "Nimplex#6232",
+            "username": "Nimplex",
+            "discrim": "6232",
+            "avatar": "https://cdn.discordapp.com/avatars/364056796932997121/932be08148d28e99928ee203fe93fc2a.png?size=2048",
+            "xp": 39,
+            "xpNeed": 80,
+            "level": 1
+        },
+        {
+            "id": "512230433782497281",
+            "tag": "Findus#7449",
+            "username": "Findus",
+            "discrim": "7449",
+            "avatar": "https://cdn.discordapp.com/avatars/512230433782497281/d717259f88d137ec1a3d24916ea1b414.png?size=2048",
+            "xp": 7,
+            "xpNeed": 80,
+            "level": 1
+        },
+        {
+            "id": "249253855613812736",
+            "tag": "Lempek#7376",
+            "username": "Lempek",
+            "discrim": "7376",
+            "avatar": "https://cdn.discordapp.com/avatars/249253855613812736/895a3ddcc7ad1e1e33000a158ce40de3.png?size=2048",
+            "xp": 6,
+            "xpNeed": 80,
+            "level": 1
+        }
+    ],
+    "server": {
+        "members": {},
+        "channels": {},
+        "roles": {},
+        "presences": {},
+        "deleted": false,
+        "available": true,
+        "id": "466179424291651614",
+        "name": "Double Trouble",
+        "icon": "9a97c218e702cfcf263a37ac71152b87",
+        "splash": "f2bfed59f1a8f5714489eafaf3956379",
+        "region": "eu-central",
+        "memberCount": 123,
+        "large": false,
+        "features": [
+            "VERIFIED",
+            "LURKABLE",
+            "INVITE_SPLASH",
+            "VANITY_URL",
+            "VIP_REGIONS",
+            "FEATURABLE",
+            "DISCOVERABLE",
+            "NEWS",
+            "BANNER",
+            "PUBLIC"
+        ],
+        "applicationID": null,
+        "afkTimeout": 300,
+        "afkChannelID": null,
+        "systemChannelID": null,
+        "verificationLevel": 2,
+        "explicitContentFilter": 0,
+        "mfaLevel": 0,
+        "joinedTimestamp": 1564785775840,
+        "defaultMessageNotifications": "MENTIONS",
+        "ownerID": "425360552148205588",
+        "_rawVoiceStates": {},
+        "emojis": {}
+    },
+    "queue": {
+        "songs": [],
+        "np": {
+            "title": "",
+            "channel": "",
+            "length": 0,
+            "requester": "",
+            "url": "",
+            "track": "",
+            "paused": false,
+            "pd": 0,
+            "date": 1569342815693
+        },
+        "loop": false,
+        "repeat": false
+    }
+}
