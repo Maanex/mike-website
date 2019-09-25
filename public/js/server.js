@@ -43,17 +43,16 @@ var app = new Vue({
 
 // paralax effect on server banner
 var docHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
-if (!isFirefox) {
-    window.addEventListener('scroll', e => {
-        if (app.server.banner) {
-            var scroll = window.scrollY;
-            var scrollPer = Math.min(1, scroll / (docHeight / 5));
-            document.getElementById('background-banner').style.transform = `translateY(${scroll/2}px)`;
-            document.getElementById('background-banner-img').style.opacity = 1-scrollPer;
-        }
-    });
-}
+var docWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+window.addEventListener('scroll', e => {
+    if (app.server.banner && docWidth >= 1000) {
+        var scroll = window.scrollY;
+        var scrollPer = Math.min(1, scroll / (docHeight / 5));
+        document.getElementById('background-banner').style.transform = `translateY(${scroll/2}px)`;
+        document.getElementById('background-banner-img').style.opacity = 1-scrollPer;
+    }
+});
+
 
 // request the leaderboard data
 function requestData() {

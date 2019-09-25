@@ -77,7 +77,20 @@
                             </div>
                         </div>
                         <div class="box">
-                            <iframe id="google-ads-frame" src="http://example.com"></iframe>
+                            <div id="google-ads-frame">
+                                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                                <ins class="adsbygoogle"
+                                    style="display:block"
+                                    data-ad-test="true"
+                                    data-adtest="true"
+                                    data-ad-test="on"
+                                    data-adtest="on"
+                                    data-ad-client="ca-pub-7258530287607290"
+                                    data-ad-slot="1451265007"
+                                    data-ad-format="auto"
+                                    data-full-width-responsive="true"></ins>
+                                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                            </div>
                             <h6>Advertisement</h6>
                         </div>
                     </div>
@@ -85,13 +98,14 @@
             </div>
         </div>
 
-        <div id="background-banner" v-if="server.banner" :style="`--cimg:url('${server.banner}')`">
+        <div id="background-banner" v-if="server.banner">
             <div id="background-banner-cover"></div>
-            <div id="background-banner-img"></div>
+            <img id="background-banner-img" :src="server.banner"></div>
         </div>
 
         <gfooter></gfooter>
     </div>
+
     <script src="/public/js/global.js"></script>
     <script src="/public/js/server.js"></script>
 </body>
