@@ -1,0 +1,217 @@
+
+
+
+#l-extra {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--content-width);
+    max-width: var(--content-max-width);
+    height: 60vh;
+    align-items: center;
+    z-index: -1;
+}
+
+#l-extra > img {
+    width: 100%;
+}
+
+#l-wrapper {
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    margin-bottom: 10vh;
+}
+
+#l-logo {
+    max-width: 440px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+#l-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+
+.box {
+    background: var(--background);
+    border-radius: 5px;
+    min-height: 550px;
+    padding: var(--box-padding);
+    margin-bottom: var(--box-margin);
+}
+
+#servers {
+    position: relative;
+    overflow: hidden;
+}
+
+.serverframe-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.serverframe-scroll {
+    width: 100%;
+    overflow: auto hidden;
+    transform: translateY(20px);
+}
+
+.serverframe-list {
+    width: max-content;
+    padding-bottom: 40px;
+}
+
+.serverframe {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    overflow: visible;
+    margin: 0 20px;
+}
+.serverframe:first-child { margin-left: 120px; }
+.serverframe:last-child { margin-right: 120px; }
+
+.serverframe > svg {
+    filter: drop-shadow(0 2px 3px #00000077);
+}
+
+.serverframe > .data {
+    position: absolute;
+    top: 64.7%;
+    width: 100%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.serverframe > .data > .name {
+    font-size: 20px;
+    color: var(--title);
+    font-weight: var(--font-weight-bold);
+}
+
+.serverframe > .data > .members {
+    font-size: 16px;
+    color: var(--text);
+    font-weight: var(--font-weight-normal);
+}
+
+.serverlist-overlay {
+    background: linear-gradient(90deg, var(--backpage) 0%, var(--backpage) 50%, var(--backpage-0op) 100%);
+    height: 50vh;
+    width: 110px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 18;
+}
+
+.serverlist-overlay.right {
+    transform: scaleX(-1);
+    left: unset;
+    right: 0;
+}
+
+.serverlist-button {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    border-radius: 999px;
+    width: 55px;
+    height: 55px;
+    z-index: 20;
+    transform: translateY(-50%);
+    box-shadow: 0 4px 5px #00000044;
+}
+.serverlist-button:active {
+    transform: translateY(-50%) scale(.95);
+}
+
+.serverlist-button.right {
+    left: unset;
+    right: 0;
+}
+
+#page-bottom {
+    position: relative;
+    overflow: visible;
+}
+
+#bottom-wave {
+    position: absolute;
+    bottom: var(--footer-height);
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 650px;
+}
+
+#bottom-wave > img {
+    width: 100vw;
+}
+
+#featurebox {
+    max-width: 800px;
+}
+
+.feature {
+    display: flex;
+    padding: 30px 0;
+    padding-right: 40px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--dividers);
+}
+.feature.right {
+    padding-right: 0;
+    padding-left: 40px;
+    flex-direction: row-reverse;
+}
+
+.feature > img {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 40%;
+    transform: translateX(calc(-1 * var(--box-padding)));
+}
+.feature.right > img {
+    transform: translateX(var(--box-padding));
+}
+
+.feature.left > div {
+    text-align: right;
+}
+
+
+@media all and (max-width: 1000px) {
+
+.feature {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+.feature > img { display: none; }
+.feature > div { text-align: left !important; }
+
+.serverlist-overlay {
+    background: linear-gradient(90deg, var(--backpage) 0%, var(--backpage-0op) 100%) !important;
+    width: 30px !important;
+}
+.serverlist-button { display: none; }
+.serverframe {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+}
+.serverframe { width: 200px; }
+.serverframe > .data > .name { font-size: 16px; }
+.serverframe > .data > .members { font-size: 12px; }
+
+}
