@@ -45,12 +45,29 @@ var app = new Vue({
 });
 
 
+function loadServerlist() {
+    fetch('/api/servers')
+        .then(res => res.json)
+        .then(json => json.length&&Vue.set(app, 'serverlist', json));
+}
+loadServerlist();
+
+
 function scrollServerlist(right) {
     var el = document.getElementById('serverlist-scroll');
     var val = right ? 700 : -700;
     for (var i = 0; i < 14; i++) {
         setTimeout(() => {
             el.scrollTo(el.scrollLeft+val/i, 0);
+        }, i * 20);
+    }
+}
+
+function scrollToContent() {
+    var dest = document.getElementById('contentScroll').getBoundingClientRect().top - 30;
+    for (var i = 0; i < 20; i++) {
+        setTimeout(() => {
+            window.scrollTo(0, window.scrollY + (dest - window.scrollY) / 7);
         }, i * 20);
     }
 }

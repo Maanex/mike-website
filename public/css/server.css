@@ -97,13 +97,6 @@ body.loaded *[loaddata], body:not(.loaded) *:not(input)[placeholder] { opacity: 
     background: var(--backpage);
 }
 
-h6 {
-    color: var(--text-min);
-    font-size: 12px;
-    font-weight: var(--font-weight-normal);
-    margin: 4px;
-}
-
 .text {
     color: var(--text);
     font-size: 14px;
