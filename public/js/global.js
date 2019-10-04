@@ -9,6 +9,7 @@ Vue.component('gheader', {
                     <div id="header-name-page" v-if="pagename" :style="'--ccolor:'+color" v-html="pagename"></div>
                 </div>
                 <div id="header-nav">
+                    <a class="nav-button" href="/team">Team</a>
                     <a class="nav-button" href="https://discord.gg/hfGSb8y">Support</a>
                     <a class="nav-button" href="/commands">Commands</a>
                     <a class="nav-button border" href="https://discordapp.com/oauth2/authorize?client_id=419620594645073930&permissions=8&scope=bot">Invite</a>
@@ -42,6 +43,7 @@ Vue.component('gfooter', {
                 </div>
                 <div class="footer-column">
                     <h3>More</h3>
+                    <a href="/team">The Team</a>
                     <a href="https://github.com/mike-boat/mike">Mike Sourcecode</a>
                 </div>
             </div>

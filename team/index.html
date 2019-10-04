@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mike</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="/public/css/global.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/team.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <gheader></gheader>
+
+        <div id="content-wrapper">
+            <div id="content">
+
+                <h2>The team behind mike</h2>
+
+                <div style="height: 30px"></div>
+
+                <div id="users">
+                    <div class="box" v-for="u in users">
+                        <img :src="`/public/img/${u.icon}`"/>
+                        <div class="userdesc">
+                            <h3 v-html="u.name"></h3>
+                            <h4 v-html="u.work"></h4>
+                            <div class="media">
+                                <a v-for="m in u.media" :href="m.href" :title="m.title" target="_blank"> <i :class="m.type"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <gfooter></gfooter>
+    </div>
+
+    <script src="/public/js/global.js"></script>
+    <script>
+        var media = {
+            twitter: 'fab fa-twitter',
+            instagram: 'fab fa-instagram',
+            github: 'fab fa-github',
+            youtube: 'fab fa-youtube',
+            discord: 'fab fa-discord',
+            website: 'fas fa-globe',
+            twitch: 'fab fa-twitch'
+        }
+
+        var users = [
+            {
+                name: 'Badosz',
+                work: 'Mike\'s Dad',
+                icon: 'badosz.png',
+                media: [
+                    {
+                        type: media.website,
+                        href: 'https://badosz.com/',
+                        title: 'badosz.com'
+                    },
+                    {
+                        type: media.twitter,
+                        href: 'https://twitter.com/badosz_',
+                        title: '@badosz_'
+                    },
+                    {
+                        type: media.discord,
+                        href: 'https://discord.gg/ZwPfRfp',
+                        title: 'Discord Server'
+                    },
+                    {
+                        type: media.github,
+                        href: 'https://badosz.com/github',
+                        title: '@badosz0'
+                    }
+                ]
+            },
+            {
+                name: 'Maanex',
+                work: 'Website',
+                icon: 'maanex.png',
+                media: [
+                    {
+                        type: media.website,
+                        href: 'https://maanex.tk/',
+                        title: 'maanex.tk'
+                    },
+                    {
+                        type: media.twitter,
+                        href: 'https://twitter.com/Maanex_',
+                        title: '@Maanex_'
+                    },
+                    {
+                        type: media.discord,
+                        href: 'https://discord.gg/mJnQXet',
+                        title: 'Discord Server'
+                    },
+                    {
+                        type: media.github,
+                        href: 'https://github.com/maanex',
+                        title: '@maanex'
+                    }
+                ]
+            },
+            {
+                name: 'Nimplex',
+                work: 'Commands',
+                icon: 'nimplex.png',
+                media: [
+                    {
+                        type: media.website,
+                        href: 'https://ctrl-team.netlify.com/',
+                        title: 'ctrl-team.netlify.com'
+                    },
+                    {
+                        type: media.youtube,
+                        href: 'https://youtube.com/Nimplex',
+                        title: 'Nimplex'
+                    },
+                    {
+                        type: media.twitch,
+                        href: 'https://twitch.tv/nimplexlive',
+                        title: 'Discord Server'
+                    },
+                    {
+                        type: media.github,
+                        href: 'https://github.com/Nimplex',
+                        title: '@Nimplex'
+                    }
+                ]
+            },
+            {
+                name: 'Rami',
+                work: 'Commands',
+                icon: 'rami.png',
+                media: [
+                    {
+                        type: media.website,
+                        href: 'https://ramilego4game.github.io/',
+                        title: 'ramilego4game.github.io'
+                    },
+                    {
+                        type: media.twitter,
+                        href: 'https://twitter.com/ramilego4game',
+                        title: 'ramilego4game'
+                    },
+                    {
+                        type: media.discord,
+                        href: 'https://discord.gg/GDtHrsJ',
+                        title: 'Discord Server'
+                    },
+                    {
+                        type: media.github,
+                        href: 'https://github.com/ramilego4game',
+                        title: 'ramilego4game'
+                    }
+                    
+                ]
+            }
+        ];
+
+        users = users.sort((a,b) => a.name == 'Badosz' ? -1 : (b.name == 'Badosz' ? 1 : (Math.random() - 0.5)));
+    
+        new Vue({el: '#app', data: {users: users}})    
+    </script>
+</body>
+</html>

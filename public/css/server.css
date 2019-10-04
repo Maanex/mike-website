@@ -226,6 +226,7 @@ body.loaded *[loaddata], body:not(.loaded) *:not(input)[placeholder] { opacity: 
     left: 0;
     width: 100%;
     height: 50vh;
+    overflow: hidden;
 }
 
 #background-banner-cover {
@@ -244,11 +245,10 @@ body.loaded *[loaddata], body:not(.loaded) *:not(input)[placeholder] { opacity: 
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     background-position: 50% 50%;
     background-size: cover;
     z-index: 5;
-    transform: translateY(-1px);
+    transform: translateY(-50%);
 }
 
 #user-search {
