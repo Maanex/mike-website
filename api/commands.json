@@ -1,0 +1,1177 @@
+{
+    "basic": {
+        "commands": [
+            {
+                "name": "help",
+                "description": "Shows help message."
+            },
+            {
+                "name": "invite",
+                "description": "Sends invite links for bot and support server."
+            },
+            {
+                "name": "ping",
+                "description": "Shows bot ping."
+            },
+            {
+                "name": "stats",
+                "description": "Shows bot stats."
+            }
+        ],
+        "name": "Basic"
+    },
+    "customcmds": {
+        "commands": [
+            {
+                "name": "addcmd",
+                "description": "Adds custom command for server.",
+                "usage": [
+                    "{prefix}{command} <name> <text>",
+                    "\n[`[GUIDE](https://mikebot.xyz/customcmds)`]"
+                ],
+                "userPerms": [
+                    "MANAGE_GUILD"
+                ]
+            },
+            {
+                "name": "delcmd",
+                "description": "Deletes custom command for server.",
+                "usage": [
+                    "{prefix}{command} <cmd>"
+                ],
+                "userPerms": [
+                    "MANAGE_GUILD"
+                ]
+            },
+            {
+                "name": "listcmds",
+                "description": "List all custom cmds for server."
+            },
+            {
+                "name": "updatecmd",
+                "description": "Updates custom command for server .",
+                "usage": [
+                    "{prefix}{command} <name> <text>"
+                ],
+                "userPerms": [
+                    "MANAGE_GUILD"
+                ]
+            }
+        ],
+        "name": "Custom Commands"
+    },
+    "fun": {
+        "commands": [
+            {
+                "name": "8ball",
+                "description": "Asks 8ball a question.",
+                "usage": [
+                    "{prefix}{command} <question>"
+                ]
+            },
+            {
+                "name": "achievement",
+                "description": "Generate minecraft achievement.",
+                "usage": [
+                    "{prefix}{command} <text>"
+                ]
+            },
+            {
+                "name": "advice",
+                "description": "Shows random advice."
+            },
+            {
+                "name": "catface",
+                "description": "Shows random catface."
+            },
+            {
+                "name": "flipcoin",
+                "description": "Flips the coin."
+            },
+            {
+                "name": "cowsay",
+                "description": "Generate cowsay meme.",
+                "usage": [
+                    "{prefix}{command} <text>"
+                ]
+            },
+            {
+                "name": "dice",
+                "description": "Flips the coin."
+            },
+            {
+                "name": "fact",
+                "description": "Shows random fact."
+            },
+            {
+                "name": "howgay",
+                "description": "Shows gay % of user.",
+                "usage": [
+                    "{prefix}{command} [mention]",
+                    "{prefix}{command} [id]",
+                    "{prefix}{command} [name]"
+                ]
+            },
+            {
+                "name": "iq",
+                "description": "Shows user's iq",
+                "usage": [
+                    "{prefix}{command} [mention]",
+                    "{prefix}{command} [id]",
+                    "{prefix}{command} [name]"
+                ]
+            },
+            {
+                "name": "joke",
+                "description": "Shows random Joke post."
+            },
+            {
+                "name": "rate",
+                "description": "Rates something.",
+                "usage": [
+                    "{prefix}{command} <text>"
+                ]
+            },
+            {
+                "name": "respect",
+                "description": "Presses F to pay respect."
+            },
+            {
+                "name": "ship",
+                "description": "Ships users.",
+                "usage": [
+                    "{prefix}{command} <mention> <mention> ..."
+                ]
+            },
+            {
+                "name": "trivia",
+                "description": "Starts triva game."
+            }
+        ],
+        "name": "Fun"
+    },
+    "images": {
+        "commands": [
+            {
+                "name": "bird",
+                "description": "Shows random bird image."
+            },
+            {
+                "name": "blurple",
+                "description": "Generates blurple image.",
+                "usage": [
+                    "{prefix}{command} [mention]",
+                    "{prefix}{command} [id]",
+                    "{prefix}{command} [name]"
+                ]
+            },
+            {
+                "name": "changemymind",
+                "description": "Generates change my mind image.",
+                "usage": [
+                    "{prefix}{command} <text>"
+                ]
+            },
+            {
+                "name": "coffee",
+                "description": "☕"
+            },
+            {
+                "name": "dog",
+                "description": "Shows random dog image."
+            },
+            {
+                "name": "excuseme",
+                "description": "Generates excuse me image.",
+                "usage": [
+                    "{prefix}{command} <text>"
+                ]
+            },
+            {
+                "name": "fox",
+                "description": "Shows random fox image."
+            },
+            {
+                "name": "hug",
+                "description": "Hugs someone.",
+                "usage": [
+                    "{prefix}{command} [mention]",
+                    "{prefix}{command} [id]",
+                    "{prefix}{command} [name]"
+                ]
+            },
+            {
+                "name": "invert",
+                "description": "Generates invert image.",
+                "usage": [
+                    "{prefix}{command} [mention]",
+                    "{prefix}{command} [id]",
+                    "{prefix}{command} [name]"
+                ]
+            },
+            {
+                "name": "meme",
+                "description": "Shows meme image."
+            },
+            {
+                "name": "memetemplate",
+                "description": "Shows meme template image."
+            },
+            {
+                "name": "meow",
+                "description": "Shows cat image."
+            },
+            {
+                "name": "note",
+                "description": "Generates note image.",
+                "usage": [
+                    "{prefix}{command} <text>"
+                ]
+            },
+            {
+                "name": "orangly",
+                "description": "Generates orangly image.",
+                "usage": [
+                    "{prefix}{command} [mention]",
+                    "{prefix}{command} [id]",
+                    "{prefix}{command} [name]"
+                ]
+            },
+            {
+                "name": "pat",
+                "description": "Pats someone.",
+                "usage": [
+                    "{prefix}{command} [mention]",
+                    "{prefix}{command} [id]",
+                    "{prefix}{command} [name]"
+                ]
+            },
+            {
+                "name": "shibe",
+                "description": "Shows random shibe image."
+            },
+            {
+                "name": "triggered",
+                "description": "Generates triggered image.",
+                "usage": [
+                    "{prefix}{command} [mention]",
+                    "{prefix}{command} [id]",
+                    "{prefix}{command} [name]"
+                ]
+            },
+            {
+                "name": "trump",
+                "description": "Generates trump tweet image.",
+                "usage": [
+                    "{prefix}{command} <text>"
+                ]
+            },
+            {
+                "name": "tweet",
+                "description": "Generates tweet image.",
+                "usage": [
+                    "{prefix}{command} <text>"
+                ]
+            },
+            {
+                "name": "wanted",
+                "description": "Generates wanted image.",
+                "usage": [
+                    "{prefix}{command} [mention]",
+                    "{prefix}{command} [id]",
+                    "{prefix}{command} [name]"
+                ]
+            },
+            {
+                "name": "wasted",
+                "description": "Generates wasted image.",
+                "usage": [
+                    "{prefix}{command} [mention]",
+                    "{prefix}{command} [id]",
+                    "{prefix}{command} [name]"
+                ]
+            },
+            {
+                "name": "xkcd",
+                "description": "Shows xkcd image."
+            }
+        ],
+        "name": "Images"
+    },
+    "info": {
+        "commands": [
+            {
+                "name": "avatar",
+                "description": "Shows user's avatar",
+                "usage": [
+                    "{prefix}{command} [mention]",
+                    "{prefix}{command} [id]",
+                    "{prefix}{command} [name] "
+                ]
+            },
+            {
+                "name": "emoji",
+                "description": "Shows information and a preview of emoji.",
+                "usage": [
+                    "{prefix}{command} <emoji>"
+                ]
+            },
+            {
+                "name": "firstmessage",
+                "description": "Shows first message in channel.",
+                "botPerms": [
+                    "READ_MESSAGE_HISTORY"
+                ]
+            },
+            {
+                "name": "members",
+                "description": "Shows member count in server."
+            },
+            {
+                "name": "perms",
+                "description": "Shows bot perms in server."
+            },
+            {
+                "name": "roleinfo",
+                "description": "Shows role info.",
+                "usage": [
+                    "{prefix}{command} <role name> [--perms]",
+                    "{prefix}{command} <role mention> [--perms]",
+                    "{prefix}{command} <role id> [--perms]"
+                ]
+            },
+            {
+                "name": "roles",
+                "description": "Shows all roles in guild."
+            },
+            {
+                "name": "serverinfo",
+                "description": "Shows server info."
+            },
+            {
+                "name": "userinfo",
+                "description": "Shows user info.",
+                "usage": [
+                    "{prefix}{command} [mention]",
+                    "{prefix}{command} [id]",
+                    "{prefix}{command} [name]"
+                ]
+            }
+        ],
+        "name": "Info"
+    },
+    "levels": {
+        "commands": [
+            {
+                "name": "levels",
+                "description": "Shows levels settings.",
+                "usage": [
+                    "{prefix}{command} [messages] <disable/enable>"
+                ],
+                "userPerms": [
+                    "MANAGE_GUILD"
+                ]
+            },
+            {
+                "name": "rank",
+                "description": "Shows user level.",
+                "usage": [
+                    "{prefix}{command} [mention]",
+                    "{prefix}{command} [id]",
+                    "{prefix}{command} [name]"
+                ]
+            },
+            {
+                "name": "top",
+                "description": "Shows top users."
+            }
+        ],
+        "name": "Levels"
+    },
+    "memes": {
+        "commands": [
+            {
+                "name": "4chan",
+                "description": "Shows random 4chan post."
+            },
+            {
+                "name": "antiantijoke",
+                "description": "Shows random AntiAntiJokes post."
+            },
+            {
+                "name": "antijoke",
+                "description": "Shows random AntiJokes post."
+            },
+            {
+                "name": "chucknorris",
+                "description": "Sends random chuck norris joke."
+            },
+            {
+                "name": "copypasta",
+                "description": "Shows random copypasta post."
+            },
+            {
+                "name": "facepalm",
+                "description": "Shows random facepalm post."
+            },
+            {
+                "name": "meirl",
+                "description": "Shows random meirl post."
+            },
+            {
+                "name": "surreal",
+                "description": "Shows random surreal post."
+            },
+            {
+                "name": "yomomma",
+                "description": "Sends random yomomma joke."
+            }
+        ],
+        "name": "Memes"
+    },
+    "moderation": {
+        "commands": [
+            {
+                "name": "ban",
+                "description": "Bans user.",
+                "usage": [
+                    "{prefix}{command} <mention> [reason]"
+                ],
+                "userPerms": [
+                    "BAN_MEMBERS"
+                ],
+                "botPerms": [
+                    "BAN_MEMBERS"
+                ]
+            },
+            {
+                "name": "banlist",
+                "description": "Lists all the banned users.",
+                "usage": [
+                    "{prefix}{command} [page]"
+                ],
+                "userPerms": [
+                    "BAN_MEMBERS"
+                ],
+                "botPerms": [
+                    "BAN_MEMBERS"
+                ]
+            },
+            {
+                "name": "clear",
+                "description": "Clear messages.",
+                "usage": [
+                    "{prefix}{command} all <number of messages> [--nolog]",
+                    "{prefix}{command} embeds <number of messages> [--nolog]",
+                    "{prefix}{command} attachments <number of messages> [--nolog]",
+                    "{prefix}{command} links <number of messages> [--nolog]",
+                    "{prefix}{command} bots <number of messages> [--nolog]",
+                    "{prefix}{command} user <mention> <number of messages> [--nolog]",
+                    "{prefix}{command} before <message id> [--nolog]",
+                    "{prefix}{command} after <message id> [--nolog]",
+                    "{prefix}{command} with <word> <number of messages> [--nolog]",
+                    "{prefix}{command} without <word> <number of messages> [--nolog]",
+                    "{prefix}{command} startswith <word> <number of messages> [--nolog]",
+                    "{prefix}{command} endswith <word> <number of messages> [--nolog]"
+                ],
+                "userPerms": [
+                    "MANAGE_MESSAGES"
+                ],
+                "botPerms": [
+                    "MANAGE_MESSAGES"
+                ]
+            },
+            {
+                "name": "kick",
+                "description": "Kick user.",
+                "usage": [
+                    "{prefix}{command} <mention> [reason]"
+                ],
+                "userPerms": [
+                    "KICK_MEMBERS"
+                ],
+                "botPerms": [
+                    "KICK_MEMBERS"
+                ]
+            },
+            {
+                "name": "lock",
+                "description": "Locks down channel.",
+                "usage": [
+                    "{prefix}{command} [reason]"
+                ],
+                "userPerms": [
+                    "MANAGE_GUILD"
+                ],
+                "botPerms": [
+                    "MANAGE_ROLES",
+                    "MANAGE_CHANNELS"
+                ]
+            },
+            {
+                "name": "makensfw",
+                "description": "Changes channel settings to NSFW.",
+                "usage": [
+                    "{prefix}{command}"
+                ],
+                "userPerms": [
+                    "MANAGE_GUILD",
+                    "MANAGE_CHANNELS"
+                ],
+                "botPerms": [
+                    "MANAGE_CHANNELS"
+                ]
+            },
+            {
+                "name": "settopic",
+                "description": "Changes channel topic.",
+                "usage": [
+                    "{prefix}{command} <topic>",
+                    "{prefix}{command} <#channel> <topic>"
+                ],
+                "userPerms": [
+                    "MANAGE_CHANNELS"
+                ],
+                "botPerms": [
+                    "MANAGE_CHANNELS"
+                ]
+            },
+            {
+                "name": "spacechannel",
+                "description": "Deletes - from channel's name",
+                "usage": [
+                    "{prefix}{command} [#channel]"
+                ],
+                "userPerms": [
+                    "MANAGE_CHANNELS"
+                ],
+                "botPerms": [
+                    "MANAGE_CHANNELS"
+                ]
+            },
+            {
+                "name": "unlock",
+                "description": "Unlocks channel.",
+                "usage": [
+                    "{prefix}{command}"
+                ],
+                "userPerms": [
+                    "MANAGE_GUILD"
+                ],
+                "botPerms": [
+                    "MANAGE_ROLES",
+                    "MANAGE_CHANNELS"
+                ]
+            },
+            {
+                "name": "warn",
+                "description": "Warns user.",
+                "usage": [
+                    "{prefix}{command} <mention> [reason]"
+                ],
+                "userPerms": [
+                    "BAN_MEMBERS"
+                ],
+                "botPerms": [
+                    "BAN_MEMBERS"
+                ]
+            },
+            {
+                "name": "warns",
+                "description": "Shows how many warns user has.",
+                "usage": [
+                    "{prefix}{command} <mention>"
+                ]
+            },
+            {
+                "name": "warnsclear",
+                "description": "Resets user's warns.",
+                "usage": [
+                    "{prefix}{command} <mention>"
+                ],
+                "userPerms": [
+                    "BAN_MEMBERS"
+                ]
+            }
+        ],
+        "name": "Moderation"
+    },
+    "music": {
+        "commands": [
+            {
+                "name": "bassboost",
+                "description": "Makes bassboost filter on.",
+                "usage": [
+                    "{prefix}{command} [low/medium/hard]"
+                ],
+                "voter": true
+            },
+            {
+                "name": "earrape",
+                "description": "Changes volume of current track to earrape.",
+                "voter": true
+            },
+            {
+                "name": "goto",
+                "description": "Goes to given time.",
+                "usage": [
+                    "{prefix}{command} <S>",
+                    "{prefix}{command} <M:S>",
+                    "{prefix}{command} <H:M:S>"
+                ],
+                "voter": true
+            },
+            {
+                "name": "join",
+                "description": "Joins voice channel."
+            },
+            {
+                "name": "leave",
+                "description": "Leaves voice channel."
+            },
+            {
+                "name": "loop",
+                "description": "Loops current track.",
+                "voter": true
+            },
+            {
+                "name": "lyrics",
+                "description": "Shows track lyrics.",
+                "usage": [
+                    "{prefix}{command} <title>"
+                ]
+            },
+            {
+                "name": "normal",
+                "description": "Returns music to normal mode."
+            },
+            {
+                "name": "np",
+                "description": "Shows current track info.",
+                "usage": [
+                    "{prefix}{command} [--raw]"
+                ]
+            },
+            {
+                "name": "pause",
+                "description": "Pauses current track."
+            },
+            {
+                "name": "play",
+                "description": "Plays music.",
+                "usage": [
+                    "{prefix}{command} <title>",
+                    "{prefix}{command} <link>"
+                ]
+            },
+            {
+                "name": "queue",
+                "description": "Shows server queue."
+            },
+            {
+                "name": "queueclear",
+                "description": "Clears music queue."
+            },
+            {
+                "name": "repeat",
+                "description": "Repeats current track."
+            },
+            {
+                "name": "resume",
+                "description": "Resumes current track."
+            },
+            {
+                "name": "shuffle",
+                "description": "Shuffles queue."
+            },
+            {
+                "name": "skip",
+                "description": "Skips current track."
+            },
+            {
+                "name": "volume",
+                "description": "Changes volume of current track.",
+                "usage": [
+                    "{prefix}{command} <volume>"
+                ],
+                "voter": true
+            }
+        ],
+        "name": "Music"
+    },
+    "notif": {
+        "commands": [
+            {
+                "name": "redditnotif",
+                "description": "Sends reddit notifications to channel.",
+                "usage": [
+                    "{prefix}{command} [webhook] [webhook url]",
+                    "{prefix}{command} [add] [subreddit]",
+                    "{prefix}{command} [remove] [subreddit]"
+                ],
+                "userPerms": [
+                    "MANAGE_GUILD"
+                ]
+            },
+            {
+                "name": "twitchnotif",
+                "description": "Sends twitch notifications to channel.",
+                "usage": [
+                    "{prefix}{command} [webhook] [webhook url]",
+                    "{prefix}{command} [add] [streamer]",
+                    "{prefix}{command} [remove] [streamer]"
+                ],
+                "userPerms": [
+                    "MANAGE_GUILD"
+                ]
+            }
+        ],
+        "name": "Notifications"
+    },
+    "search": {
+        "commands": [
+            {
+                "name": "cryptocurrency",
+                "description": "Gives cryptocurrency info.",
+                "usage": [
+                    "{prefix}{command} <name>"
+                ]
+            },
+            {
+                "name": "cocktail",
+                "description": "cocktail",
+                "usage": [
+                    "{prefix}{command} <name>"
+                ]
+            },
+            {
+                "name": "discordjs",
+                "description": "Shows info from discord.js docs.",
+                "usage": [
+                    "{prefix}{command} <thing>"
+                ]
+            },
+            {
+                "name": "fortnite",
+                "description": "Shows your fortnite stats.",
+                "usage": [
+                    "{prefix}{command} <username>"
+                ]
+            },
+            {
+                "name": "lmgtfy",
+                "description": "Creates lmgtfy link.",
+                "usage": [
+                    "{prefix}{command} <text>"
+                ]
+            },
+            {
+                "name": "minecraft-user",
+                "description": "Shows minecraft user info.",
+                "usage": [
+                    "{prefix}{command} <username>"
+                ]
+            },
+            {
+                "name": "minecraft",
+                "description": "Shows minecraft server info.",
+                "usage": [
+                    "{prefix}{command} <ip> [port]"
+                ]
+            },
+            {
+                "name": "osu",
+                "description": "Shows your OSU! infomations.",
+                "usage": [
+                    "{prefix}{command} <username>"
+                ]
+            },
+            {
+                "name": "pokemon",
+                "description": "Shows pokemon info.",
+                "usage": [
+                    "{prefix}{command} <pokemon>"
+                ]
+            },
+            {
+                "name": "roblox",
+                "description": "Shows your roblox stats.",
+                "usage": [
+                    "{prefix}{command} <username>"
+                ]
+            },
+            {
+                "name": "stackoverflow",
+                "description": "Searches Stack Overflow for your query.",
+                "usage": [
+                    "{prefix}{command} <query>"
+                ]
+            },
+            {
+                "name": "steam",
+                "description": "Shows game on steam info.",
+                "usage": [
+                    "{prefix}{command} <name>"
+                ]
+            },
+            {
+                "name": "topbots",
+                "description": "Shows top bots (from DBL)."
+            },
+            {
+                "name": "twitch",
+                "description": "Get streaming information of a live Twitch channel.",
+                "usage": [
+                    "{prefix}{command} <streamer>"
+                ]
+            },
+            {
+                "name": "weather",
+                "description": "Shows the weather.",
+                "usage": [
+                    "{prefix}{command} <city>"
+                ]
+            },
+            {
+                "name": "wikipedia",
+                "description": "Gives you informations from wikipedia.",
+                "usage": [
+                    "{prefix}{command} <thing>"
+                ]
+            },
+            {
+                "name": "youtube-live",
+                "description": "Shows youtube live info.",
+                "usage": [
+                    "{prefix}{command} <ChannelID>"
+                ]
+            }
+        ],
+        "name": "Search"
+    },
+    "settings": {
+        "commands": [
+            {
+                "name": "autoresponder",
+                "description": "Shows autoresponder settings.",
+                "usage": [
+                    "{prefix}{command} <disable/enable>"
+                ],
+                "userPerms": [
+                    "MANAGE_GUILD"
+                ]
+            },
+            {
+                "name": "logs",
+                "description": "Shows logs settings.",
+                "usage": [
+                    "{prefix}{command} mess [channel] [#channel]",
+                    "{prefix}{command} mess [enable/disable]"
+                ]
+            },
+            {
+                "name": "plugins",
+                "description": "Shows plugins settings.",
+                "usage": [
+                    "{prefix}{command} <disable/enable> <id>"
+                ],
+                "userPerms": [
+                    "MANAGE_GUILD"
+                ]
+            },
+            {
+                "name": "prefix",
+                "description": "Shows custom prefix.",
+                "usage": [
+                    "{prefix}{command} [prefix]"
+                ],
+                "userPerms": [
+                    "MANAGE_GUILD"
+                ]
+            }
+        ],
+        "name": "Settings"
+    },
+    "snipes": {
+        "commands": [
+            {
+                "name": "snipe",
+                "description": "Shows last deleted message in server."
+            }
+        ],
+        "name": "Snipes"
+    },
+    "social": {
+        "commands": [
+            {
+                "name": "balance",
+                "description": "Shows user balance.",
+                "usage": [
+                    "{prefix}{command} [mention]",
+                    "{prefix}{command} [id]",
+                    "{prefix}{command} [name]"
+                ]
+            },
+            {
+                "name": "daily",
+                "description": "Gives your daily cash."
+            },
+            {
+                "name": "deposit",
+                "description": "Deposit pocket money to bank.",
+                "usage": [
+                    "{prefix}{command} <money>"
+                ]
+            },
+            {
+                "name": "inventory",
+                "description": "Shows inventory.",
+                "usage": [
+                    "{prefix}{command} [mention]",
+                    "{prefix}{command} [id]",
+                    "{prefix}{command} [name]"
+                ]
+            },
+            {
+                "name": "pay",
+                "description": "Pay someone.",
+                "usage": [
+                    "{prefix}{command} [mention] <money>",
+                    "{prefix}{command} [id] <money>",
+                    "{prefix}{command} [name] <money>"
+                ]
+            },
+            {
+                "name": "profile",
+                "description": "Shows user profile.",
+                "usage": [
+                    "{prefix}{command} [mention]",
+                    "{prefix}{command} [id]",
+                    "{prefix}{command} [name]"
+                ]
+            },
+            {
+                "name": "rep",
+                "description": "Give someone rep points.",
+                "usage": [
+                    "{prefix}{command} [mention]",
+                    "{prefix}{command} [id]",
+                    "{prefix}{command} [name]"
+                ]
+            },
+            {
+                "name": "shop",
+                "description": "Shows shop content."
+            },
+            {
+                "name": "withdraw",
+                "description": "Withdraws bank money to pocket.",
+                "usage": [
+                    "{prefix}{command} <money>"
+                ]
+            },
+            {
+                "name": "work",
+                "description": "Gives your work cash."
+            }
+        ],
+        "name": "Social"
+    },
+    "starboard": {
+        "commands": [
+            {
+                "name": "starboard",
+                "description": "Shows starboard settings.",
+                "usage": [
+                    "{prefix}{command} [channel] [#channel]",
+                    "{prefix}{command} [stars] [1-10]"
+                ]
+            }
+        ],
+        "name": "Starboard"
+    },
+    "text": {
+        "commands": [
+            {
+                "name": "base64",
+                "description": "Gives your text in base64.",
+                "usage": [
+                    "{prefix}{command} <text>"
+                ]
+            },
+            {
+                "name": "bigtext",
+                "description": "Makes your text BIG.",
+                "usage": [
+                    "{prefix}{command} <text>"
+                ]
+            },
+            {
+                "name": "binary",
+                "description": "Converts text to binary.",
+                "usage": [
+                    "{prefix}{command} <text>"
+                ]
+            },
+            {
+                "name": "clapify",
+                "description": "Puts your text between claps",
+                "usage": [
+                    "{prefix}{command} <text>"
+                ]
+            },
+            {
+                "name": "decode",
+                "description": "Decodes your text.",
+                "usage": [
+                    "{prefix}{command} base64 <text>",
+                    "{prefix}{command} hex <text>"
+                ]
+            },
+            {
+                "name": "flip",
+                "description": "Flips your text.",
+                "usage": [
+                    "{prefix}{command} <text>"
+                ]
+            },
+            {
+                "name": "hex",
+                "description": "Gives your text in HEX.",
+                "usage": [
+                    "{prefix}{command} <text>"
+                ]
+            },
+            {
+                "name": "mix",
+                "description": "Shuffles text.",
+                "usage": [
+                    "{prefix}{command} <text>"
+                ]
+            },
+            {
+                "name": "morse",
+                "description": "Gives your text in morse",
+                "usage": [
+                    "{prefix}{command} <text>"
+                ]
+            },
+            {
+                "name": "reverse",
+                "description": "Gives your text but reversed.",
+                "usage": [
+                    "{prefix}{command} <text>"
+                ]
+            },
+            {
+                "name": "space",
+                "description": "Gives your text spaced out.",
+                "usage": [
+                    "{prefix}{command} <text>"
+                ]
+            },
+            {
+                "name": "spoiler",
+                "description": "Gives your text but in annoying spoilers.",
+                "usage": [
+                    "{prefix}{command} <text>"
+                ]
+            },
+            {
+                "name": "vaporwave",
+                "description": "Gives your text in weeb style.",
+                "usage": [
+                    "{prefix}{command} <text>"
+                ]
+            }
+        ],
+        "name": "Text"
+    },
+    "utility": {
+        "commands": [
+            {
+                "name": "choose",
+                "description": "Chooses random item.",
+                "usage": [
+                    "{prefix}{command} <item>, <item>, [item]...."
+                ]
+            },
+            {
+                "name": "color",
+                "description": "Shows information and a preview of a color.",
+                "usage": [
+                    "{prefix}{command} <hex>"
+                ]
+            },
+            {
+                "name": "createemoji",
+                "description": "Creates emoji from link",
+                "usage": [
+                    "{prefix}{command} <name> <image link>"
+                ],
+                "userPerms": [
+                    "MANAGE_EMOJIS"
+                ],
+                "botPerms": [
+                    "MANAGE_EMOJIS"
+                ]
+            },
+            {
+                "name": "generateinvite",
+                "description": "Generates invite for current text channel.",
+                "userPerms": [
+                    "CREATE_INSTANT_INVITE"
+                ],
+                "botPerms": [
+                    "CREATE_INSTANT_INVITE"
+                ]
+            },
+            {
+                "name": "jumbo",
+                "description": "Shows preview of emoji.",
+                "usage": [
+                    "{prefix}{command} <emoji>"
+                ]
+            },
+            {
+                "name": "lastseen",
+                "description": "Shows the time since the specified user was last seen.",
+                "usage": [
+                    "{prefix}{command} [mention]",
+                    "{prefix}{command} [id]",
+                    "{prefix}{command} [name]"
+                ]
+            },
+            {
+                "name": "poll",
+                "description": "Creates poll.",
+                "usage": [
+                    "{prefix}{command} <text>",
+                    "{prefix}{command} <text>,<option 1>,<option 2>,..."
+                ]
+            },
+            {
+                "name": "qrcode",
+                "description": "Generates qrcode.",
+                "usage": [
+                    "{prefix}{command} <text>"
+                ]
+            },
+            {
+                "name": "shorten",
+                "description": "Shorts link.",
+                "usage": [
+                    "{prefix}{command} <link>"
+                ]
+            },
+            {
+                "name": "snowflake",
+                "description": "Shows snowflake info.",
+                "usage": [
+                    "{prefix}{command} <id>"
+                ]
+            }
+        ],
+        "name": "Utility"
+    }
+}
