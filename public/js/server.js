@@ -11,8 +11,11 @@ var app = new Vue({
         },
         users: [],
         visible: [],
+        chunks: [],
         search: '',
-        notfound: false
+        notfound: false,
+        visibleChunks: [],
+        chunkHeights: []
     },
     methods: {
         lestyle: function(index) {
@@ -24,6 +27,12 @@ var app = new Vue({
                 default: color = 'B3B3B3';
             }
             return `--ccolor:#${color};`;
+        },
+        lcstyle: function(index, size) {
+            let height = 79 * size;
+            if (index == 0) height -= 20;
+            height = this.chunkHeights[index] || height;
+            return `height: ${height}px; padding: 0 !important`;
         }
     },
     watch: {
@@ -32,10 +41,33 @@ var app = new Vue({
             if (query) {
                 query = query.toLowerCase();
                 for (var u of app.users) {
-                    if (`${u.name.toLowerCase()}#${u.discrim}`.startsWith(query))
+                    if (`${u.name.toLowerCase()}#${u.discrim}`.includes(query))
                         app.visible.push(u);
                 }
             }
+        },
+        visible: function(visible) {
+            app.chunks = [];
+            app.visibleChunks = [];
+            if (!visible.length) return;
+            let cchunk;
+            let pos = 0;
+            wh: while (true) {
+                cchunk = [];
+                for (i = 0; i < 20; i++) {
+                    if (!visible[pos + i]) {
+                        app.chunks.push(cchunk);
+                        app.visibleChunks.push(false);
+                        break wh;
+                    }
+                    cchunk.push(visible[pos + i]);
+                }
+                app.chunks.push(cchunk);
+                app.visibleChunks.push(false);
+                pos += 20;
+            }
+            Vue.set(app.visibleChunks, 0, true);
+            Vue.set(app.visibleChunks, 1, true);
         }
     }
 });
@@ -56,7 +88,7 @@ window.addEventListener('scroll', e => {
 
 // request the leaderboard data
 function requestData() {
-    var serverid = window.location.href.split('server/')[1];
+    var serverid = window.location.href.split('server/')[1] || '0';
     var url = `/api/server/${serverid}`;
     fetch(url)
         .catch(failedLoading)
@@ -106,3 +138,20 @@ function failedLoading() {
 }
 
 requestData();
+
+
+let leaderboardBox = document.getElementById('leaderboard-box');
+let boxHeight = app.chunkHeights[1] || 1977;
+window.addEventListener('scroll', e => {
+    let scrollTop = leaderboardBox.getBoundingClientRect().top;
+    for (let i = 0; i < app.chunks.length; i++) {
+        let chunkUpper = scrollTop + boxHeight * i - boxHeight / 2;
+        let chunkLower = chunkUpper + boxHeight * 2;
+        let current = app.visibleChunks[i];
+        let visible = false;
+        if (chunkUpper < window.innerHeight && chunkLower > 0) visible = true;
+        if (current && !visible && !app.chunkHeights[i])
+            app.chunkHeights[i] = leaderboardBox.children[i].offsetHeight - 3;
+        if (current != visible) Vue.set(app.visibleChunks, i, visible);
+    }
+});

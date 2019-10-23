@@ -1,0 +1,269 @@
+{
+    "success": true,
+    "users": [
+        {
+            "id": "207435670854041602",
+            "tag": "Rami#8688",
+            "username": "Rami",
+            "discrim": "8688",
+            "avatar": "https://cdn.discordapp.com/avatars/207435670854041602/1dbc4118bd3454e7846a14b8d13a66a7.png?size=2048",
+            "xp": 3076,
+            "xpNeed": 7700,
+            "level": 8
+        },
+        {
+            "id": "264831961053265921",
+            "tag": "egordorichev#5245",
+            "username": "egordorichev",
+            "discrim": "5245",
+            "avatar": "https://cdn.discordapp.com/avatars/264831961053265921/5a8bf17415c80896dcee806bbc8bcc2e.png?size=2048",
+            "xp": 5556,
+            "xpNeed": 6000,
+            "level": 7
+        },
+        {
+            "id": "268387237526241280",
+            "tag": "DSF100#8558",
+            "username": "DSF100",
+            "discrim": "8558",
+            "avatar": "https://cdn.discordapp.com/avatars/268387237526241280/f1d5a99386695895c08f11459591c92b.png?size=2048",
+            "xp": 4418,
+            "xpNeed": 4500,
+            "level": 6
+        },
+        {
+            "id": "137258778092503042",
+            "tag": "Maanex#8085",
+            "username": "Maanex",
+            "discrim": "8085",
+            "avatar": "https://cdn.discordapp.com/avatars/137258778092503042/7b6c709b9059cf765b151eb3c1525100.png?size=2048",
+            "xp": 3084,
+            "xpNeed": 4500,
+            "level": 6
+        },
+        {
+            "id": "196515098733445120",
+            "tag": "Brastin3#1871",
+            "username": "Brastin3",
+            "discrim": "1871",
+            "avatar": "https://cdn.discordapp.com/avatars/196515098733445120/208b83bc738940c8893f8965cc5cec0c.png?size=2048",
+            "xp": 3197,
+            "xpNeed": 3200,
+            "level": 5
+        },
+        {
+            "id": "161855195964375040",
+            "tag": "nufflee#2003",
+            "username": "nufflee",
+            "discrim": "2003",
+            "avatar": "https://cdn.discordapp.com/avatars/161855195964375040/3f73b2afd8863cdf95174d2015e62722.png?size=2048",
+            "xp": 911,
+            "xpNeed": 3200,
+            "level": 5
+        },
+        {
+            "id": "214858075650260992",
+            "tag": "Badosz#0001",
+            "username": "Badosz",
+            "discrim": "0001",
+            "avatar": "https://cdn.discordapp.com/avatars/214858075650260992/2773ad4be359fbf9e2e4fee4bfacfa18.png?size=2048",
+            "xp": 1432,
+            "xpNeed": 2100,
+            "level": 4
+        },
+        {
+            "id": "381978984566489100",
+            "tag": "𝗦𝗽𝗮𝗰𝗲𝗳𝗮𝗰𝗲𝗗𝗘𝗩#9570",
+            "username": "𝗦𝗽𝗮𝗰𝗲𝗳𝗮𝗰𝗲𝗗𝗘𝗩",
+            "discrim": "9570",
+            "avatar": "https://cdn.discordapp.com/avatars/381978984566489100/1f915f07c1ac3609718881a3dca0d968.png?size=2048",
+            "xp": 552,
+            "xpNeed": 1200,
+            "level": 3
+        },
+        {
+            "id": "526062266550976522",
+            "tag": "Yaymaha#4323",
+            "username": "Yaymaha",
+            "discrim": "4323",
+            "avatar": "https://cdn.discordapp.com/avatars/526062266550976522/9cc9fc12ca03e0b1597aaa7a5acbd2f9.png?size=2048",
+            "xp": 447,
+            "xpNeed": 1200,
+            "level": 3
+        },
+        {
+            "id": "257100688121790464",
+            "tag": "Truyka#9733",
+            "username": "Truyka",
+            "discrim": "9733",
+            "avatar": "https://cdn.discordapp.com/avatars/257100688121790464/a4a1d93d5fd700b8f41781390cfc29fe.png?size=2048",
+            "xp": 338,
+            "xpNeed": 1200,
+            "level": 3
+        },
+        {
+            "id": "256580070540312577",
+            "tag": "HacksawUnit#4900",
+            "username": "HacksawUnit",
+            "discrim": "4900",
+            "avatar": "https://cdn.discordapp.com/avatars/256580070540312577/c60a38e04452863dd0e95d243c64d03f.png?size=2048",
+            "xp": 471,
+            "xpNeed": 500,
+            "level": 2
+        },
+        {
+            "id": "313719009839284224",
+            "tag": "nade_#4568",
+            "username": "nade_",
+            "discrim": "4568",
+            "avatar": "https://discordapp.com/assets/0e291f67c9274a1abdddeb3fd919cbaa.png",
+            "xp": 375,
+            "xpNeed": 500,
+            "level": 2
+        },
+        {
+            "id": "228956218377371648",
+            "tag": "NopeSir#4294",
+            "username": "NopeSir",
+            "discrim": "4294",
+            "avatar": "https://cdn.discordapp.com/avatars/228956218377371648/968a5370ba2a1783243442f396f23f37.png?size=2048",
+            "xp": 223,
+            "xpNeed": 500,
+            "level": 2
+        },
+        {
+            "id": "337621533369303042",
+            "tag": "Scef#2139",
+            "username": "Scef",
+            "discrim": "2139",
+            "avatar": "https://cdn.discordapp.com/avatars/337621533369303042/5f4da1fc0fc7ca94bf2a22b0f844ca0c.png?size=2048",
+            "xp": 117,
+            "xpNeed": 500,
+            "level": 2
+        },
+        {
+            "id": "333530784495304705",
+            "tag": "Incin#1234",
+            "username": "Incin",
+            "discrim": "1234",
+            "avatar": "https://cdn.discordapp.com/avatars/333530784495304705/90b7cc10ed88bbb66198ec21e0c75164.png?size=2048",
+            "xp": 87,
+            "xpNeed": 500,
+            "level": 2
+        },
+        {
+            "id": "163872462768046082",
+            "tag": "svntax#7967",
+            "username": "svntax",
+            "discrim": "7967",
+            "avatar": "https://cdn.discordapp.com/avatars/163872462768046082/53e10ace53ea8d65895c940c4aa9c055.png?size=2048",
+            "xp": 38,
+            "xpNeed": 500,
+            "level": 2
+        },
+        {
+            "id": "159576449148256256",
+            "tag": "sky#1150",
+            "username": "sky",
+            "discrim": "1150",
+            "avatar": "https://cdn.discordapp.com/avatars/159576449148256256/2bdf6e47db975f853dd0ddf8efb583e3.png?size=2048",
+            "xp": 0,
+            "xpNeed": 500,
+            "level": 2
+        },
+        {
+            "id": "255743778562899969",
+            "tag": "bush#7807",
+            "username": "bush",
+            "discrim": "7807",
+            "avatar": "https://cdn.discordapp.com/avatars/255743778562899969/6ebeecedb3550d979f0555c6595bdfcc.png?size=2048",
+            "xp": 65,
+            "xpNeed": 80,
+            "level": 1
+        },
+        {
+            "id": "259194303585189899",
+            "tag": "Softizo#3975",
+            "username": "Softizo",
+            "discrim": "3975",
+            "avatar": "https://cdn.discordapp.com/avatars/259194303585189899/e43df37a4b30a77c282032acc568e81f.png?size=2048",
+            "xp": 62,
+            "xpNeed": 80,
+            "level": 1
+        },
+        {
+            "id": "207839349209956352",
+            "tag": "anivire#0498",
+            "username": "anivire",
+            "discrim": "0498",
+            "avatar": "https://cdn.discordapp.com/avatars/207839349209956352/f09fc1867db24ee3659f4abc7e5ffb05.png?size=2048",
+            "xp": 34,
+            "xpNeed": 80,
+            "level": 1
+        },
+        {
+            "id": "159672101341626368",
+            "tag": "Failpositive#5624",
+            "username": "Failpositive",
+            "discrim": "5624",
+            "avatar": "https://cdn.discordapp.com/avatars/159672101341626368/e2ebcc4d0b2d29e2d1966d850600bf38.png?size=2048",
+            "xp": 30,
+            "xpNeed": 80,
+            "level": 1
+        },
+        {
+            "id": "336279713054195714",
+            "tag": "itsAJ#0001",
+            "username": "itsAJ",
+            "discrim": "0001",
+            "avatar": "https://cdn.discordapp.com/avatars/336279713054195714/05e854bc431e58d8feb7d3263ceb1968.png?size=2048",
+            "xp": 7,
+            "xpNeed": 80,
+            "level": 1
+        },
+        {
+            "id": "197508388576296963",
+            "tag": "Bibiki#9356",
+            "username": "Bibiki",
+            "discrim": "9356",
+            "avatar": "https://cdn.discordapp.com/avatars/197508388576296963/689fa1581085175e7ee885ac96135c03.png?size=2048",
+            "xp": 3,
+            "xpNeed": 80,
+            "level": 1
+        }
+    ],
+    "server": {
+        "features": [
+            "COMMERCE",
+            "VERIFIED",
+            "INVITE_SPLASH",
+            "PUBLIC",
+            "VIP_REGIONS",
+            "FEATURABLE",
+            "DISCOVERABLE",
+            "NEWS",
+            "BANNER",
+            "VANITY_URL"
+        ],
+        "id": "440553300203667477",
+        "icon": "93803523f5d9bdc8ca6c775d5368639d",
+        "splash": "7dccff92a50aaf23e82833614087cd68",
+        "name": "Rexcellent Games"
+    },
+    "queue": {
+        "songs": [],
+        "np": {
+            "title": "",
+            "channel": "",
+            "length": 0,
+            "requester": "",
+            "url": "",
+            "track": "",
+            "paused": false,
+            "pd": 0,
+            "date": 1571675909308
+        },
+        "loop": false,
+        "repeat": false
+    }
+}

@@ -118,12 +118,19 @@ body.loaded *[loaddata], body:not(.loaded) *:not(input)[placeholder] { opacity: 
     display: flex;
     align-items: center;
 }
-.leaderboard-entry:first-of-type {    
+.leaderboard-entry:first-of-type,
+.leaderboard-chunk:first-of-type {    
     padding-top: 0;
 }
-.leaderboard-entry:last-of-type {
+.leaderboard-entry:last-of-type,
+.leaderboard-chunk:last-of-type {
     padding-bottom: 0;
     border-bottom: none;
+}
+.leaderboard-chunk {
+    padding: var(--box-padding) 0;
+    width: 100%;
+    border-bottom: 3px solid var(--dividers);
 }
 
 .le-rank {

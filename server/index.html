@@ -32,19 +32,21 @@
                 </div>
                 <div id="serverdata">
                     <div id="leaderboard">
-                        <div class="box">
-                            <div loaddata class="leaderboard-entry" v-for="u of visible" :style="lestyle(u.rank)">
-                                <div class="le-rank" v-html="u.rank+'.'" :bigtext="u.rank<9" :smalltext="u.rank>98" :minitext="u.rank>998"></div>
-                                <img class="le-avatar" :src="u.avatar.split('?')[0]+'?size=128'"/>
-                                <div class="le-name" v-html="u.name"></div>
-                                <div class="le-discrim" v-html="'#'+u.discrim"></div>
-                                <div class="le-xp">
-                                    <div class="le-xp-text">
-                                        <p class="le-xp-info" v-html="`${u.xp} / ${u.xpNeed} XP`"></p>
-                                        <p class="le-xp-level" v-html="`Level ${u.level}`"></p>
-                                    </div>
-                                    <div class="le-xp-bar">
-                                        <div class="le-xp-bar-eff" :style="`width:${u.xp/u.xpNeed*100}%`">.</div>
+                        <div class="box" id="leaderboard-box">
+                            <div class="leaderboard-chunk" v-for="(chunk,chunkIndex) of chunks" :class="{invisible: !visibleChunks[chunkIndex]}" :style="visibleChunks[chunkIndex]?'':lcstyle(chunkIndex,chunk.length)">
+                                <div loaddata class="leaderboard-entry" v-for="u of chunk" :style="lestyle(u.rank)" v-if="visibleChunks[chunkIndex]">
+                                    <div class="le-rank" v-html="u.rank+'.'" :bigtext="u.rank<=9" :smalltext="u.rank>99" :minitext="u.rank>999"></div>
+                                    <img class="le-avatar" :src="u.avatar.split('?')[0]+'?size=128'"/>
+                                    <div class="le-name" v-html="u.name"></div>
+                                    <div class="le-discrim" v-html="'#'+u.discrim"></div>
+                                    <div class="le-xp">
+                                        <div class="le-xp-text">
+                                            <p class="le-xp-info" v-html="`${u.xp} / ${u.xpNeed} XP`"></p>
+                                            <p class="le-xp-level" v-html="`Level ${u.level}`"></p>
+                                        </div>
+                                        <div class="le-xp-bar">
+                                            <div class="le-xp-bar-eff" :style="`width:${u.xp/u.xpNeed*100}%`">.</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
