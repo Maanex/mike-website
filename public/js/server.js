@@ -29,7 +29,7 @@ var app = new Vue({
             return `--ccolor:#${color};`;
         },
         lcstyle: function(index, size) {
-            let height = 79 * size;
+            let height = 99 * size - 3;
             if (index == 0) height -= 20;
             height = this.chunkHeights[index] || height;
             return `height: ${height}px; padding: 0 !important`;

@@ -60,8 +60,7 @@
                                 <div class="le-avatar le-avatar-placeholder"></div>
                                 <div class="le-name le-name-placeholder" :style="`width:${Math.abs(Math.sin(i*i*1000))*150+100}px`"></div>
                                 <div class="le-xp">
-                                    <div class="le-xp-text">
-                                    </div>
+                                    <div class="le-xp-text"></div>
                                     <div class="le-xp-bar">.</div>
                                 </div>
                             </div>
@@ -102,7 +101,7 @@
 
         <div id="background-banner" v-if="server.banner">
             <div id="background-banner-cover"></div>
-            <img id="background-banner-img" :src="server.banner"></div>
+            <img id="background-banner-img" :src="server.banner">
         </div>
 
         <gfooter></gfooter>
